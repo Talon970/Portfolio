@@ -9,3 +9,6 @@ Mein erstes JavaScript-Projekt, mit dem man eine Todo-Liste erstellen kann.
 
 palindrom.py :
 Script that Tests, if Intiger is a Palindrom or not.
+
+oop001.py :
+First codeing with OOP.
