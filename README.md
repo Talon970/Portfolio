@@ -6,3 +6,6 @@ Ein Script das aus einer Liste, Duplikate entfernt und die Liste der Größe nac
 
 todo.html :
 Mein erstes JavaScript-Projekt, mit dem man eine Todo-Liste erstellen kann.
+
+palindrom.py :
+Script that Tests, if Intiger is a Palindrom or not.
