@@ -1,0 +1,25 @@
+/* Stil für die Positionierung des spezifischen Buttons am unteren Rand */
+#impressum-button {
+    position: fixed;
+    bottom: 10px; /* Abstand vom unteren Rand */
+    left: 50%;    /* Zentrieren des Buttons */
+    transform: translateX(-50%); /* Feinabstimmung der Zentrierung */
+}
+
+
+/* Zentriert den Text in den <p>-Tags */
+#impressum-inhalt p {
+    text-align: center;
+    font-size: 14pt;
+    font-weight: 600;
+    padding: 4px; /* Fügt innenliegenden Abstand hinzu */
+}
+
+
+    #offcanvasBottom {
+        width: 100%; /* Setzt die Breite auf 80% des Bildschirmes */
+        height: 40vh; /* Setzt die Höhe auf 90% der Bildschirmhöhe */
+        background-color: #9cf3ff; /* Ersetzen Sie diesen Farbcode durch Ihre gewünschte Farbe */
+    }
+
+
