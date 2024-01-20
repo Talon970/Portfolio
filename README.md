@@ -12,3 +12,7 @@ Script that Tests, if Intiger is a Palindrom or not.
 
 oop001.py :
 First codeing with OOP.
+
+website_work.html :
+style.css :
+These two Files are together, this will be a Website for a Company.
