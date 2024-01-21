@@ -1,4 +1,4 @@
-/* Stil für die Positionierung des spezifischen Buttons am unteren Rand */
+/* Zentriert den Button Impressum */
 #impressum-button {
     position: fixed;
     bottom: 10px; /* Abstand vom unteren Rand */
@@ -7,7 +7,7 @@
 }
 
 
-/* Zentriert den Text in den <p>-Tags */
+/* Zentriert den Text in den <p>-Tags für das Impressum */
 #impressum-inhalt p {
     text-align: center;
     font-size: 14pt;
@@ -15,11 +15,58 @@
     padding: 4px; /* Fügt innenliegenden Abstand hinzu */
 }
 
+/* Reguliert die Höhe und Breite wenn das Impressum geöffnet wird, damit alles aufeinmal sichtbar ist */
+#offcanvasBottom {
+    width: 100%; /* Setzt die Breite auf 80% des Bildschirmes */
+    height: 40vh; /* Setzt die Höhe auf 90% der Bildschirmhöhe */
+    background-color: #9cf3ff; /* Ersetzen Sie diesen Farbcode durch Ihre gewünschte Farbe */
+}
 
-    #offcanvasBottom {
-        width: 100%; /* Setzt die Breite auf 80% des Bildschirmes */
-        height: 40vh; /* Setzt die Höhe auf 90% der Bildschirmhöhe */
-        background-color: #9cf3ff; /* Ersetzen Sie diesen Farbcode durch Ihre gewünschte Farbe */
-    }
+/* Dieser Teil sorgt dafür das in der Navbar der Text zentriert ist und in einer anderen Schriftart */
+#navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 20px; /* Rundet die Ecken der Navbar ab */
+}
+    
+#navbar .container-fluid {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+    
+#navbar .navbar-brand {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 33px;
+    font-family: 'Brush Script MT', "Cursive";
+}
+    
+/* Dieser Teil sorgt dafür das auf der kompletten Seite links und recht ein Abstand ist */
+body {
+    padding-left: 150px;  /* Fügt links einen Abstand hinzu */
+    padding-right: 150px; /* Fügt rechts einen Abstand hinzu */
+}
+/* Dieser Teil sorgt dafür das, dass Karusell eine angepasste Höhe hat */
+.carousel-item {
+    height: 1000px; /* Setzt eine feste Höhe für jedes Carousel-Item */
+}
 
+.carousel-item img {
+    width: auto; /* behält das Seitenverhältnis bei */
+    height: 100%; /* passt die Höhe an das Carousel-Item an */
+    object-fit: cover; /* stellt sicher, dass das Bild den Container vollständig bedeckt */
+}
 
+#carouselExampleCaptions {
+    width: 100%; /* Ändern Sie diesen Wert, um die gewünschte Breite zu erreichen */
+    margin: auto; /* Zentriert das Karussell horizontal */
+    
+}
+/* Dieser Teil sorgt dafür das die Ecken abgerundet sind */
+#carouselExampleCaptions .carousel-inner,
+#carouselExampleCaptions .carousel-item,
+#carouselExampleCaptions .carousel-item img {
+    border-radius: 20px; /* Abgerundete Ecken */
+}
