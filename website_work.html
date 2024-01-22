@@ -9,8 +9,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- Dieser Teil verbindet die HTML Datei mit der Style.css datei -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
 
 </head>
+
 <body>
     <!-- Dieser Teil ist für die Navbar zuständig -->
     <nav id="navbar" class="navbar bg-body-tertiary">
@@ -32,22 +35,28 @@
         <div class="carousel-item active">
           <img src="image/ben-wicks-Dtm9FK50sIU-unsplash.jpg" class="d-block w-100" alt="Bild 1">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5>"Begleitung in schwierigen Zeiten"</h5>
+            <p>Unser Ziel ist es, Menschen in herausfordernden Lebensphasen zu unterstützen und zu begleiten.<br> 
+              Wir setzen uns dafür ein, dass Sie in schwierigen Zeiten nicht alleine sind und die Hilfe bekommen, 
+              die Sie benötigen.</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="image/bernd-gruber-42vzBfBKJkw-unsplash.jpg" class="d-block w-100" alt="Bild 2">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h5>"Stärkung der Selbstbestimmung"</h5>
+            <p>Wir glauben fest an die Wichtigkeit der Selbstbestimmung und arbeiten engagiert daran,<br> 
+              diese für jeden Einzelnen zu stärken. <br>
+              Unser Ansatz fördert die Unabhängigkeit und die Entscheidungsfreiheit unserer Klienten.</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="image/pipcke-SZ-DsEZxzlg-unsplash.jpg" class="d-block w-100" alt="Bild 3">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5>"Vertrauensvolle Partnerschaft"</h5>
+            <p>Eine vertrauensvolle Beziehung ist die Basis unserer Arbeit. Wir bieten eine verlässliche, <br>
+              empathische Betreuung, die auf gegenseitigem Vertrauen und Respekt beruht, <br>
+              um gemeinsam die besten Lösungen zu finden.</p>
           </div>
         </div>
       </div>
@@ -59,6 +68,88 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+    </div>
+
+    <!-- Dieser Teil sind die 3 Cards, unter dem Karusell -->
+
+    <div class="card text-center">
+      <div class="card-header">
+        Über mich
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+      </div>
+      <div class="card-footer text-body-secondary">
+        
+      </div>
+    </div>
+
+    <div class="card text-center">
+      <div class="card-header">
+        Meine Arbeit
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+      </div>
+      <div class="card-footer text-body-secondary">
+        
+      </div>
+    </div>
+
+
+    <div class="card text-center">
+      <div class="card-header">
+        Unsere Ziele
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+      </div>
+      <div class="card-footer text-body-secondary">
+        
+      </div>
+    </div>
+
+    <!-- Dieser Teil zeigt die Kommentare -->
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+      <div class="toast-header">
+        
+        <strong class="me-auto">Bootstrap</strong>
+        <small class="text-body-secondary">11 mins ago</small>
+        
+      </div>
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+    </div>
+
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+      <div class="toast-header">
+        
+        <strong class="me-auto">Bootstrap</strong>
+        <small class="text-body-secondary">11 mins ago</small>
+        
+      </div>
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+    </div>
+
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+      <div class="toast-header">
+        
+        <strong class="me-auto">Bootstrap</strong>
+        <small class="text-body-secondary">11 mins ago</small>
+        
+      </div>
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
     </div>
 
 
@@ -82,5 +173,16 @@
             <p>Fax 036871.154132</p>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+      var toastList = toastElList.map(function (toastEl) {
+        return new bootstrap.Toast(toastEl)
+          autohide: false // Deaktiviert das automatische Ausblenden
+      })
+      toastList.forEach(toast => toast.show()); // Dies zeigt alle Toasts an
+    </script>
+    
 </body>
 </html>
