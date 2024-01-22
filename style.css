@@ -1,9 +1,13 @@
 /* Zentriert den Button Impressum */
 #impressum-button {
     position: fixed;
+    position: relative;
     bottom: 10px; /* Abstand vom unteren Rand */
     left: 50%;    /* Zentrieren des Buttons */
     transform: translateX(-50%); /* Feinabstimmung der Zentrierung */
+    z-index: 1000; /* Hoher Z-Index-Wert */
+    
+    
 }
 
 
@@ -28,6 +32,8 @@
     justify-content: center;
     width: 100%;
     border-radius: 20px; /* Rundet die Ecken der Navbar ab */
+    margin-bottom: 30px; /* Fügt einen Abstand nach unten hinzu */
+    
 }
     
 #navbar .container-fluid {
@@ -69,4 +75,17 @@ body {
 #carouselExampleCaptions .carousel-item,
 #carouselExampleCaptions .carousel-item img {
     border-radius: 20px; /* Abgerundete Ecken */
+}
+/* Dieser Teil sorgt für die optische darstellung der Karten */
+.card-header, .card-footer {
+    height: 50px; /* Setzt eine feste Höhe */
+    font-family: 'Brush Script MT', "Cursive";
+    font-size: 33px;
+    
+}
+
+.card {
+    border-radius: 20px; /* Rundet die Ecken der Karte ab */
+    margin-bottom: 30px; /* Fügt einen Abstand nach unten hinzu */
+    margin-top: 30px; /* Fügt einen Abstand nach oben hinzu */
 }
