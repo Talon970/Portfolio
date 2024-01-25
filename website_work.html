@@ -9,12 +9,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- Dieser Teil verbindet die HTML Datei mit der Style.css datei -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    
+    <!-- Hintergrundbild -->
+    <style>
+      body {
+            background-image: url('image/hintergrundbild4.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+    </style>
     
 
 </head>
 
 <body>
+
+    
     <!-- Dieser Teil ist für die Navbar zuständig -->
     <nav id="navbar" class="navbar bg-body-tertiary">
         <div class="container-fluid">
@@ -116,11 +126,14 @@
     </div>
 
     <!-- Dieser Teil zeigt die Kommentare -->
+  <div class="toast-container">
+
+  
     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
       <div class="toast-header">
         
-        <strong class="me-auto">Bootstrap</strong>
-        <small class="text-body-secondary">11 mins ago</small>
+        <strong class="me-auto blurred-text">H. Müller</strong>
+        <small class="text-body-secondary">vor einem Jahr</small>
         
       </div>
       <div class="toast-body">
@@ -131,8 +144,8 @@
     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
       <div class="toast-header">
         
-        <strong class="me-auto">Bootstrap</strong>
-        <small class="text-body-secondary">11 mins ago</small>
+        <strong class="me-auto blurred-text">S. Kammer</strong>
+        <small class="text-body-secondary">vor 5 Monaten</small>
         
       </div>
       <div class="toast-body">
@@ -143,15 +156,15 @@
     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
       <div class="toast-header">
         
-        <strong class="me-auto">Bootstrap</strong>
-        <small class="text-body-secondary">11 mins ago</small>
+        <strong class="me-auto blurred-text">R. Frieden</strong>
+        <small class="text-body-secondary">vor einem Monat</small>
         
       </div>
       <div class="toast-body">
         Hello, world! This is a toast message.
       </div>
     </div>
-
+  </div>
 
 
     <!-- Dieser Teil ist für das Impressum zuständig -->
