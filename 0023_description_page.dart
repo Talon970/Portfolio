@@ -1,5 +1,5 @@
-import 'package:first_flutter/class/item_class.dart';
-import 'package:first_flutter/core/constants.dart';
+import 'package:first_flutter/class/0025_item_class.dart';
+import 'package:first_flutter/core/0022_constants.dart';
 import 'package:flutter/material.dart';
 
 class DescriptionPage extends StatefulWidget {

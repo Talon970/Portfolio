@@ -1,5 +1,5 @@
-import 'package:first_flutter/class/item_class.dart';
-import 'package:first_flutter/widget/card_widget.dart';
+import 'package:first_flutter/class/0025_item_class.dart';
+import 'package:first_flutter/widget/0021_card_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {

@@ -1,5 +1,5 @@
-import 'package:first_flutter/pages/home_page.dart';
-import 'package:first_flutter/pages/profile_page.dart';
+import 'package:first_flutter/pages/0024_home_page.dart';
+import 'package:first_flutter/pages/0029_profile_page.dart';
 import 'package:flutter/material.dart';
 
 class WidgetTree extends StatefulWidget {
